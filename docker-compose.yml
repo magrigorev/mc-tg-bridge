@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+        - "127.0.0.1:27017:27017"
+    volumes:
+      - "/path/to/your/db/:/data/db"
+    container_name: bot_mongo
